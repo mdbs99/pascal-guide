@@ -31,7 +31,7 @@ A adoção desses prefixos facilita o code completion da IDE, elimina praticamen
 - **Event Properties (On Name)**: OnEdit, OnCalculate
 - **Event Implementations (Do Name)**: DoEdit, DoCalculate
 
-## Comentários
+### Comentários
 
 - Sempre acima dos tipos e métodos, devem iniciar com "///" a descrição principal
 - Linhas opcionais, com detalhes, devem ser iniciadas por "// -"
@@ -48,7 +48,24 @@ A adoção desses prefixos facilita o code completion da IDE, elimina praticamen
     function GetDataPointer(aNode: PVirtualNode): Pointer;
 ```
 
-## Diretórios e Arquivos
+### Exemplos
+
+Abaixo alguns links de projetos reais, em produção, que utilizam (em sua maioria) a nomenclatura descrita neste documento:
+
+- **tis.ui.grid.core**: https://github.com/mdbs99/pltis_uicomponents/blob/master/src/standard/tis.ui.grid.core.pas
+
+## Estrutura
+
+### Declaração de Unidades
+
+A ordem de declaração das Unidades é muito importante, seja por uma questão visual e organizacional, mas também para informar ao compilador a ordem de procura dos tokens — veja meu artigo sobre isso [aqui](https://objectpascalprogramming.com/declarando-unidades).
+
+1. fpc/lazarus/delphi units
+1. 3rd units
+1. my open source units
+1. project units
+
+### Diretórios e Arquivos
 
 - Todos os arquivos devem ser nomeados em letras minúsculas
 - Dentro de `src`, irão existir diretórios para cada Context; como esses diretórios são únicos, assim também será um Context por todo o projeto
@@ -65,8 +82,13 @@ acme
       acme.foo.controller.pas
 ```
 
-## Exemplos reais
+## Desenvolvimento
 
-Abaixo alguns links de projetos reais, em produção, que utilizam (em sua maioria) a nomenclatura descrita:
+### Criação de Objetos
 
-- **tis.ui.grid.core**: https://github.com/mdbs99/pltis_uicomponents/blob/master/src/standard/tis.ui.grid.core.pas
+wip...
+
+### Destruição de Objetos
+
+wip...
+
