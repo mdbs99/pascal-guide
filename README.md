@@ -104,9 +104,13 @@ uses
 
 ### Diretórios e Arquivos
 
-- Recomendo que os arquivos sejam nomeados em letras minúsculas, se o sistema será compilado em sistemas não-Windows.
-- Cada token que compõe o nome da Unidade deve ser separado por "." (em compiladores mais atuais) ou em PascalCase (em compiladores mais antigos, exemplo Delphi 6<)
-- Dentro de `src`, irão existir diretórios para cada Context; como esses diretórios são únicos, assim também será um Context por todo o projeto
+#### Nomeando Arquivos
+- Recomendo que os arquivos sejam nomeados em letras minúsculas, se o sistema será compilado em sistemas não-Windows
+- Cada token que compõe o nome da Unidade deve ser separado por "." quando estiver utilizando compiladores mais novos, por exemplo: `acme.bar.model.pas`; para compiladores mais antigos (como Delphi 6 e anteriores), deve-se utilizar PascalCase, por exemplo: `AcmeBarModel.pas`
+
+#### Estrutura de Diretórios
+- Dentro de `src`, existirão diretórios correspondentes a cada Context
+- Como esses diretórios são únicos, cada Context também será único em todo o projeto, eliminando totalmente quaisquer ambiguidades que poderiam ocorrer ao utilizar múltiplas Unidades no mesmo projeto
 ```
 acme
   bin
