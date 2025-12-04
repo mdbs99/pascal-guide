@@ -15,10 +15,8 @@ A adoção desses prefixos facilita o code completion da IDE, elimina praticamen
   - [Tokens](#tokens)
   - [Comentários](#comentários)
   - [Linhas em branco](#linhas-em-branco)
-  - [Exemplos](#exemplos)
 - [Estrutura](#estrutura)
   - [Declaração de Unidades](#declaração-de-unidades)
-  - [Exemplos](#exemplos)
   - [Diretórios e Arquivos](#diretórios-e-arquivos)
     - [Nomeando Arquivos](#nomeando-arquivos)
     - [Estrutura de Diretórios](#estrutura-de-diretórios)
@@ -72,12 +70,6 @@ Inserir linhas em branco dentro de um método é considerado um code smell. Isso
 
 Evite pular linhas entre blocos de código.
 
-### Exemplos
-
-A seguir estão alguns links para projetos reais, atualmente em produção, que adotam — em sua maioria — a nomenclatura e as convenções de codificação apresentadas neste documento:
-
-- **tis.ui.grid.core**: https://github.com/mdbs99/pltis_uicomponents/blob/master/src/standard/tis.ui.grid.core.pas
-
 ## Estrutura
 
 ### Declaração de Unidades
@@ -88,8 +80,6 @@ A ordem de declaração das Unidades é muito importante, seja por uma questão 
 1. 3rd units
 1. my open source units
 1. project units
-
-### Exemplos
 
 ```pascal
 uses
