@@ -78,24 +78,24 @@ A ordem de declaração das Unidades é muito importante, seja por uma questão 
 
 1. fpc/lazarus, delphi units
 1. 3rd units
-1. my open source units
-1. project units
+1. my global units
+1. my local units
 
 ```pascal
 uses
-  /// fpc/lazarus, delphi units
+  // fpc/lazarus, delphi units
   Windows,
   Classes,
   SysUtils,
   Controls,
   Math,
-  /// 3rd units
+  // 3rd units
   mormot.core.base,
   mormot.core.data,
   mormot.core.os,
-  /// my open source units
+  // my global units
   tisstrings,
-  /// project units
+  // my local units
   tis.core.os,
   tis.core.utils,
   tis.ui.grid.controls,
