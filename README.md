@@ -38,12 +38,12 @@ A adoção desses prefixos facilita o code completion da IDE, elimina praticamen
 - **Pointers (P Module Function)**: PFooModel, PBarModel, PFooController, PBarEditForm
 - **Fields (f Function)**: fModel, fController, fEditForm
 - **Arguments (a Function)**: aModel, aController, aEditForm
-- **Unit Variables (v Module Function)**: vFooModel, vBarModel, vFooController, vBarEditForm
+- **Global Variables (v Module Function)**: vFooModel, vBarModel, vFooController, vBarEditForm
 - **Local Variables (v Function)**: vModel, vController, vEditForm
-- **Unit Constants (_ Module _ Function**): _FOO_VALUE, _BAR_VALUE, _FOO_BAR_VALUE
+- **Global Constants (_ Module _ Function**): _FOO_VALUE, _BAR_VALUE, _FOO_BAR_VALUE
 - **Local Constants (_ Function**): _VALUE, _TOKEN_VALUE
+- **Global Functions (Module Function)** (não recomendado): FooIsValid, BarExecute
 - **Local Functions (Function)**: IsValid, Execute
-- **Unit Functions (Module Function)**: FooIsValid, BarExecute
 - **Event Properties (On Function)**: OnEdit, OnCalculate
 - **Event Implementations (Do Function)**: DoEdit, DoCalculate
 - **Enums**:
